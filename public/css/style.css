@@ -1,0 +1,296 @@
+/*html{
+	font-size: 18px;
+	font-family: calibri
+}
+a{ text-decoration: none }*/
+
+#header-menu{
+	width: 100%;
+	height: 47px;
+	background-color: #333
+}
+#header-menu ul{
+	list-style-type: none;
+	font-size: 16px;
+	top: 0;
+	margin: 0;
+	padding: 0
+}
+#header-menu li{
+	float: left;
+	cursor: pointer
+}
+#header-menu li a{
+	display: block;
+	color: #FFF;
+	transition: color 0.4s ease;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none
+}
+#header-menu li a:hover{ color: #2AC2E8 }
+.konten{
+	margin-top: 5px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 1px solid #111;
+	border-radius: 10px
+}
+.isiKonten{
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	height: 250px;
+	width: 300px;
+	overflow: auto
+}
+.isiKonten::-webkit-scrollbar{ width: 5px }
+.isiKonten::-webkit-scrollbar-thumb{ background-color: #2AC2E8;border-radius: 10px }
+.isiKonten::-webkit-scrollbar-thumb:hover{ background-color: #3DBADA }
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden
+}
+.tombol{
+	border:none;
+	float: right;
+	transition: color 0.4s ease;
+	background-color: rgba(255,255,255,1);
+	cursor: pointer
+}
+.tombol:hover{ color: #666 }
+.tombol:focus{
+	outline: 0;
+	border: 0
+}
+.tombol2{
+	border: none;
+	background-color: #666;
+	cursor: pointer;
+	color: #FFF
+}
+.tombol3{
+	border: none;
+	background-color: #FFF;
+	cursor: pointer
+}
+
+/*.dropdown{ position: relative }
+.dropdown-content{
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 15rem;
+	transform: translateY(-2rem);
+	z-index: -1;
+	transition: all 0.4s ease-in-out 0s, visibility 0s linear 0.4s, z-index 0s linear 0.01s
+}
+.dropdown:focus .dropdown-content,
+.dropdown:focus-within .dropdown-content,
+.dropdown:hover .dropdown-content{
+	visibility: visible;
+	background-color: #000;
+	opacity: 0.7;
+	z-index: 1;
+	transform: translateY(0%);
+	transition-delay: 0s, 0s, 0.3s
+}
+.dropdown a{
+	display: block;
+	padding: 0.5em 1em;
+	text-decoration: none
+}
+.dropdown a:hover{ color: rgba(255, 255, 255, 1) }
+.dropdown ul li{
+	list-style-type: none;
+	font-size: 1.125rem;
+	margin: 0;
+	padding: 0
+}
+.dropdown > ul{
+	background-color: #000;
+	text-align: center
+}
+.dropdown > ul > li{ display: inline-block }
+.dropdown > ul > li:first-child{ border-left: none }*/
+
+.tabel{
+	width: 100%;
+	border-collapse: collapse
+}
+.tabel table{ border: 1px solid #000 }
+.tabel tr:nth-child(even){ background-color: #F2F2F2 }
+.tabel tr:nth-child(odd){ background-color: #FFF }
+.tabel th{
+	background-color: #999;
+	color: #FFF;
+	height: 30px /*50px*/
+}
+.tabel th:last-child{ z-index: 1 }
+.tabel button{
+	color: #666;
+	transition: color 0.4s ease
+}
+.tabel button:hover{ color: #333 }
+.tabel button:visited{ color: #666 }
+.tabel a{
+	color: #666;
+	transition: color 0.4s ease;
+	text-decoration: none
+}
+.tabel a:hover{ color: #333 }
+.tabel a:visited{ color: #666 }
+
+.tabel2{
+	position: relative;
+	left: 75px;
+	border-collapse: collapse
+}
+.tabel2 td{ padding-bottom: 5px }
+.tabel2 tr:nth-child(even){ background-color: #F2F2F2 }
+.tabel2 tr:nth-child(odd){ background-color: #FFF }
+.tabel2 th{
+	background-color: #999;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #FFF;
+	height: 50px
+}
+.tabel2 a{
+	color: #666;
+	transition: color 0.4s ease;
+	text-decoration: none
+}
+.tabel2 a:hover{ color: #333 }
+.tabel2 a:visited{ background-color: #666 }
+
+.tabel3{
+	border-collapse: collapse;
+	display: block
+}
+.tabel3 td{ padding-bottom: 5px }
+.tabel3 tr:nth-child(even){ background-color: #F2F2F2 }
+.tabel3 tr:nth-child(odd){ background-color: #FFF }
+.tabel3 a{
+	color: #666;
+	transition: color 0.4s ease;
+	text-decoration: none
+}
+.tabel3 a:hover{ color: #333 }
+.tabel3 a:visited{ background-color: #666 }
+.tabel3 th{
+	position: sticky !important;
+	background-color: #999;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #FFF;
+	height: 50px
+}
+
+/*.tooltip {
+    position: relative;
+    display: inline-block
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1
+}
+.tooltip button{
+	background-color: transparent;
+	border: none;
+	cursor: pointer
+}*/
+
+.search-container{ float: right }
+.search-container input[type=text] {
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none
+}
+.search-container button {
+	float: right;
+	padding: 1.5px;
+	margin-top: 8px;
+	margin-right: 16px;
+	background: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer
+}
+.search-container button:hover { background: #ccc }
+
+.active .page-link{ background-color: #aaa !important }
+.pagination{ justify-content: center !important }
+.page-link{
+	padding: .75rem 1rem !important;
+	color: #000 !important;
+	background-color: #FFF !important;
+	border: 1px solid #DEE2E6 !important
+}
+.page-link:hover{ background-color: #AAA !important }
+
+#back-top {
+	z-index: 9999;
+	position: fixed;
+	bottom: 30px;
+	left: 30px
+}
+#back-top i {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	top: 10px;
+	border-radius: 100px;
+	text-align: center;
+	display: block;
+	transition: .4s
+}
+#back-top i:hover { cursor: pointer }
+.tumval{
+	background: #ddd no-repeat center center;
+	border-radius: 100px
+}
+.tumval:hover{ background-color: #666 }
+
+@media screen and (max-width: 600px){
+	.search-container { float: none }
+	.search-container input[type=text], .search-container button {
+		float: none;
+		display: block;
+		text-align: left;
+		width: 100%;
+		margin: 0;
+		padding: 14px
+	}
+	.search-container input[type=text]{ border: 1px solid #ccc }
+}
